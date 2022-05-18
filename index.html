@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/37cda05054.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css?family=Elsie">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Bautista</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- my css -->
@@ -12,22 +16,189 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light" id="nav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Sarah Bautista</a>
+            <a class="navbar-brand" href="#top">
+                <!-- <img src="images/portfolio-logo.png" width="50" height="50" id="nav-img" class="d-inline-block align-top" alt="portfolio logo" /> -->
+                <i class="fa-solid fa-splotch fa-3x" style="color: #48556a"> <span>S</span></i>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="#">About Me</a>
-                    <a class="nav-link" href="#">Projects</a>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a id="nav-projects" class="nav-link" href="#projects" style="color: #48556a">< projects /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-coursework" class="nav-link" href="#experience" style="color: #48556a">< experience /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-about" class="nav-link" href="#about" style="color: #48556a">< about /></a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" id="nav-button"><a id="nav-contact" class="nav-link" href="#contact">Contact</a></button>
+                      </li>
+                  </ul>
             </div>
         </div>
     </nav>
+    <!-- body -->
+    <div class="container-fluid">
+        <!-- introduction -->
+        <div class="row" id="intro-title">
+            <div class="col-12" id="hello">
+                Hi, my name is <span>Sarah</span>.
+            </div>
+        </div>
+        <!-- <div class="row" id="wave"></div> -->
+        <div class="row" id="intro-text">
+            <div class="col-4"> </div>
+            <div class="col-4 intro">
+                I'm an aspiring UI/UX designer and full-stack web developer from Miami based in Los Angeles.
+            </div>
+            <div class="col-4 rellax" data-rellax-speed="3">
+                <div class="rotate">
+                    <i class="fa-solid fa-splotch fa-7x"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <i class="fa-solid fa-splotch fa-3x rellax" data-rellax-speed="7"></i>
+            </div>
+            <div class="col-4 intro">
+                Take a look through my page to explore my projects, plans, and ideas!
+            </div>
+            <div class="col-4"> </div>
+            <div class="col-2">
+                <i class="fa-solid fa-splotch fa-7x rellax" data-rellax-speed="4"></i>
+            </div>
+            <div class="col-2 rellax" data-rellax-speed="6">
+                <div class="rotate">
+                    <i class="fa-solid fa-splotch fa-3x"></i>
+                </div>
+            </div>
+            <div class="col-2"> </div>
+            <div class="col-2"> </div>
+            <div class="col-2">
+                <i class="fa-solid fa-splotch fa-2x rellax" data-rellax-speed="5"></i>
+            </div>
+            <div class="col-2 rellax" data-rellax-speed="3">
+                <div class="rotate">
+                    <i class="fa-solid fa-splotch fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <!-- projects -->
+        <div class="row" id="projects">
+            <div data-scroll class="col-12 section-title">Projects</div>
+            <div class="col-6">
+                <figure><a href="https://scbautis.wixsite.com/binge-portfolio" target="_blank"><img class="selectable" src="images/binge-card.png" alt="BINGE" /></a></figure>
+                <p class="mini-title">BINGE</p>
+                <p><i class="fa-solid fa-splotch rotate" style="color: #48556a"></i> Winner of the ITP 310 Spring 2022 UX Hammer Award <i class="fa-solid fa-splotch" style="color: #48556a"></i></p>
+                <p>Social Media & Television</p>
+                <p>Product Design & UI/UX Design</p>
+            </div>
+            <div class="col-6">
+                <figure><a href="http://303.itpwebdev.com/~scbautis/final_project/index.php" target="_blank"><img class="selectable" src="images/stella-card.png" alt="STELLA" /></a></figure>
+                <p class="mini-title">STELLA</p>
+                <p>Zodiac Constellation Map & Education</p>
+                <p>Full-Stack Web Development & JSON API Use</p>
+            </div>
+            <div class="col-6">
+                <figure><a href="https://www.figma.com/proto/REzOLVJktBPIPtAQMBdQFH/A13%3A-Hotel-Assignment-(Designing-%26-Prototyping)?node-id=9%3A17&starting-point-node-id=9%3A17" target="_blank"><img class="selectable" src="images/daze-inn-card.png" alt="DAZE INN" /></a></figure>
+                <p class="mini-title">DAZE INN</p>
+                <p>Mock Themed Hotel App</p>
+                <p>UI/UX Design</p>
+            </div>
+            <div class="col-6">
+                <figure><img src="images/coming-soon-card.png" alt="COMING SOON" /></figure>
+            </div>
+        </div>
+        <!-- coursework -->
+        <div class="row" id="experience">
+            <div data-scroll class="col-12 section-title">Experience</div>
+            <div class="col-4">
+                <p class="mini-title" id="languages">Languages</p>
+                <div class="row">
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-html5 fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-css3-alt fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-js-square fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#48556a" viewBox="0 0 24 24" data-tip="MySQL" currentItem="false"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z"></path></svg></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-php fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-sass fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-python fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-java fa-2x"></i></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <p class="mini-title">Relevant Coursework</p>
+                <p><a href="http://303.itpwebdev.com/~scbautis/student_page.html" target="_blank" style="color: #65758b">Full-Stack Web Development</a></p>
+                <p>Design for User Experience</p>
+                <p>Object-Oriented Programming</p>
+                <p>Programming in Python</p>
+                <p>Introduction to Data Science</p>
+            </div>
+            <div class="col-4">
+                <p class="mini-title">Libraries & Tools</p>
+                <div class="row">
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-figma fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fab fa-adobe fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-bootstrap fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#48556a" viewBox="0 0 24 24" data-tip="MySQL" currentItem="false"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z"></path></svg></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2em" height="2em" viewBox="0 0 32 32" style="fill: #48556a"><path d="M 6.1191406 12 C 5.7591406 12 5.4903906 12.219063 5.4003906 12.539062 L 3.6601562 19 L 4.890625 18.990234 C 5.230625 18.990234 5.5096094 18.770937 5.5996094 18.460938 L 6.890625 13.710938 L 7.8808594 13.710938 C 8.3008594 13.710937 8.6907813 13.989219 8.8007812 14.449219 C 8.9207813 14.989219 8.5008594 15.570312 7.8808594 15.570312 L 7.3691406 15.570312 C 7.0191406 15.570312 6.7403906 15.799609 6.6503906 16.099609 L 6.3300781 17.279297 L 7.9296875 17.279297 C 9.7896875 17.279297 10.849531 15.489063 10.519531 14.039062 C 10.239531 12.809063 9.1707031 12 7.9707031 12 L 6.1191406 12 z M 30.720703 12 C 30.470703 12 30.259219 12.160625 30.199219 12.390625 L 28.419922 19 C 29.449922 19 30.410156 18.309297 30.660156 17.279297 L 31.990234 12.410156 C 32.050234 12.200156 31.890156 12 31.660156 12 L 30.720703 12 z M 11.351562 14 L 11.189453 14.623047 C 11.075453 15.077047 11.398328 15.492188 11.861328 15.492188 L 14.574219 15.492188 C 14.763219 15.492187 14.686734 15.691281 14.677734 15.738281 L 14.271484 17.232422 C 14.252484 17.298422 14.224813 17.478516 14.007812 17.478516 L 12.361328 17.478516 C 12.106328 17.478516 12.106328 17.109375 12.361328 17.109375 L 13.382812 17.109375 C 13.703812 17.109375 13.959687 16.892609 14.054688 16.599609 L 14.214844 15.984375 L 11.927734 15.984375 C 10.075734 15.984375 9.8683906 18.980469 11.900391 18.980469 L 14.611328 18.990234 C 15.140328 18.990234 15.58675 18.649438 15.71875 18.148438 L 16.380859 15.720703 C 16.607859 14.822703 15.926109 14 15.037109 14 L 11.351562 14 z M 2.5039062 14.009766 C 1.4169063 14.009766 0.42203125 14.6705 0.08203125 15.9375 C -0.33396875 17.5255 0.87707812 19 2.4550781 19 L 3.0410156 19 L 3.3808594 17.771484 C 3.4378594 17.563484 3.276125 17.382812 3.078125 17.382812 L 2.5390625 17.382812 C 1.3760625 17.382812 1.3670625 15.625 2.5390625 15.625 L 3.4199219 15.625 C 3.7509219 15.625 4.0046094 15.417234 4.0996094 15.115234 L 4.3925781 14.009766 L 2.5039062 14.009766 z M 19.78125 14.009766 L 19.78125 14.017578 L 17.503906 14.017578 L 16.265625 18.611328 C 16.208625 18.819328 16.367406 19 16.566406 19 L 17.455078 19 C 17.682078 19 17.890266 18.858812 17.947266 18.632812 L 18.759766 15.636719 L 19.695312 15.636719 C 20.290312 15.636719 20.717641 16.184422 20.556641 16.732422 L 20.054688 18.603516 C 19.997687 18.811516 20.140422 19 20.357422 19 L 21.263672 19 C 21.480672 19 21.689094 18.857859 21.746094 18.630859 L 22.162109 17.080078 C 22.587109 15.521078 21.41525 14.009766 19.78125 14.009766 z M 24.939453 14.011719 C 24.098453 14.011719 23.342234 14.578391 23.115234 15.400391 L 22.605469 17.271484 C 22.369469 18.103484 23.002266 19.001953 23.947266 19.001953 L 27.09375 19.001953 C 27.41475 19.001953 27.680625 18.783234 27.765625 18.490234 L 28.039062 17.507812 L 24.570312 17.507812 C 24.400312 17.507813 24.286984 17.346312 24.333984 17.195312 L 24.712891 15.787109 C 24.750891 15.607109 24.882078 15.503906 25.080078 15.503906 L 26.630859 15.503906 C 26.753859 15.503906 26.848312 15.618 26.820312 15.75 L 26.78125 15.873047 C 26.75225 15.967047 26.696562 16.005859 26.601562 16.005859 L 25.580078 16.005859 C 25.249078 16.005859 24.986156 16.222625 24.910156 16.515625 L 24.740234 17.128906 L 27.263672 17.128906 C 27.764672 17.128906 28.227375 16.816875 28.359375 16.296875 L 28.511719 15.738281 C 28.747719 14.840281 28.076687 14.009719 27.179688 14.011719 L 24.939453 14.011719 z"></path></svg></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#48556a" viewBox="0 0 24 24" data-tip="jQuery" currentItem="false"><path d="M1.525 5.87c-2.126 3.054-1.862 7.026-.237 10.269.037.079.078.154.118.229.023.052.049.1.077.15.013.027.031.056.047.082.026.052.054.102.081.152l.157.266c.03.049.057.097.09.146.056.094.12.187.178.281.026.04.05.078.079.117a6.368 6.368 0 00.31.445c.078.107.156.211.24.315.027.038.058.076.086.115l.22.269c.028.03.055.067.084.099.098.118.202.233.306.35l.005.006a3.134 3.134 0 00.425.44c.08.083.16.165.245.245l.101.097c.111.105.223.209.34.309.002 0 .003.002.005.003l.057.05c.102.089.205.178.31.26l.125.105c.085.068.174.133.26.2l.137.105c.093.07.192.139.287.207.035.025.07.05.106.073l.03.023.28.185.12.08c.148.094.294.184.44.272.041.02.084.044.123.068.108.062.22.125.329.183.06.034.122.063.184.094.075.042.153.083.234.125a.324.324 0 01.056.023c.033.015.064.031.096.047.12.06.245.118.375.175.024.01.05.02.076.034.144.063.289.123.438.182.034.01.07.027.105.04.135.051.274.103.411.152l.05.018c.154.052.305.102.46.15.036.01.073.023.111.033.16.048.314.105.474.137 10.273 1.872 13.258-6.177 13.258-6.177-2.508 3.266-6.958 4.127-11.174 3.169-.156-.036-.312-.086-.47-.132a13.539 13.539 0 01-.567-.182l-.062-.024c-.136-.046-.267-.097-.4-.148a1.615 1.615 0 00-.11-.04c-.148-.06-.29-.121-.433-.184-.031-.01-.057-.024-.088-.036a23.44 23.44 0 01-.362-.17 1.485 1.485 0 01-.106-.052c-.094-.044-.188-.095-.28-.143a3.947 3.947 0 01-.187-.096c-.114-.06-.227-.125-.34-.187-.034-.024-.073-.044-.112-.066a15.922 15.922 0 01-.439-.27 2.107 2.107 0 01-.118-.078 6.01 6.01 0 01-.312-.207c-.035-.023-.067-.048-.103-.073a9.553 9.553 0 01-.295-.212c-.042-.034-.087-.066-.132-.1-.088-.07-.177-.135-.265-.208l-.118-.095a10.593 10.593 0 01-.335-.28.258.258 0 00-.037-.031l-.347-.316-.1-.094c-.082-.084-.166-.164-.25-.246l-.098-.1a9.081 9.081 0 01-.309-.323l-.015-.016c-.106-.116-.21-.235-.313-.355-.027-.03-.053-.064-.08-.097l-.227-.277a21.275 21.275 0 01-.34-.449C2.152 11.79 1.306 7.384 3.177 3.771m4.943-.473c-1.54 2.211-1.454 5.169-.254 7.508a9.111 9.111 0 00.678 1.133c.23.33.484.721.793.988.107.122.223.24.344.36l.09.09c.114.11.232.217.35.325l.016.013a9.867 9.867 0 00.414.342c.034.023.063.05.096.073.14.108.282.212.428.316l.015.009c.062.045.128.086.198.13.028.018.06.042.09.06.106.068.21.132.318.197.017.007.032.016.048.023.09.055.188.108.282.157.033.02.065.035.1.054.066.033.132.068.197.102l.032.014c.135.067.273.129.408.19.034.014.063.025.092.039.111.048.224.094.336.137.05.017.097.037.144.052.102.038.21.073.31.108l.14.045c.147.045.295.104.449.13C22.164 17.206 24 11.098 24 11.098c-1.653 2.38-4.852 3.513-8.261 2.628a8.04 8.04 0 01-.449-.13c-.048-.014-.09-.029-.136-.043-.104-.036-.211-.07-.312-.109l-.144-.054c-.113-.045-.227-.087-.336-.135-.034-.015-.065-.025-.091-.04-.14-.063-.281-.125-.418-.192l-.206-.107-.119-.06a5.673 5.673 0 01-.265-.15.62.62 0 01-.062-.035c-.106-.066-.217-.13-.318-.198-.034-.019-.065-.042-.097-.062l-.208-.136c-.144-.1-.285-.208-.428-.313-.032-.029-.063-.053-.094-.079-1.499-1.178-2.681-2.79-3.242-4.613-.59-1.897-.46-4.023.56-5.75m4.292-.147c-.909 1.334-.996 2.99-.37 4.46.665 1.563 2.024 2.79 3.608 3.37.065.025.128.046.196.07l.088.027c.092.03.185.063.28.084 4.381.845 5.567-2.25 5.886-2.704-1.043 1.498-2.792 1.857-4.938 1.335a4.85 4.85 0 01-.516-.16 6.352 6.352 0 01-.618-.254 6.53 6.53 0 01-1.082-.66c-1.922-1.457-3.113-4.236-1.859-6.5"></path></svg></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-react fa-2x"></i></p>
+                    <p class="col-12 col-lg-6 col-xl-3 icon"><i class="fa-brands fa-node-js fa-2x"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="row" id="about">
+            <div data-scroll class="col-12 section-title">About</div>
+            <div class="col-6">
+                <p>
+                    I'm currently majoring in Psychology and Data Science at the University of Southern California. My interests lie at the intersection of multiple fields, including but not limited to psychology, coding, the gaming industry, social media management, mental health awareness, and foreign language.
+                </p>
+                <p>
+                    Currently, I'm obsessed with UI/UX and product design, as well as full-stack web development. These allow me to channel my passion for change in this evergrowing digital atmosphere with both artistic and technical perfection.
+                </p>
+                <p>
+                    Besides tinkering on personal projects, I love collaborating on work with others. One of my favorite people to work with is my partner, <a href="https://thomasthuanlenguyen.me" target="_blank" style="color: #65758b">Thomas</a>, but I'm always open to exploring this field with new people, whether it be on my free-time or through an internship or job. Feel free to browse my resume and get in contact with me!
+                </p>
+                <p>
+                    <button type="button" id="resume-button"><a id="resume-link" href="resumes/SarahBautista_Resume_May2022.pdf" target="_blank">Resume</a></button>
+                </p>
+            </div>
+            <div class="col-6">
+                <img id="headshot" src="images/intro-headshot.jpg" alt="Headshot" />
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="row" id="contact">
+            <div data-scroll class="col-12 section-title">Contact</div>
+            <div class="col-12">
+                <p>
+                    <a href="mailto:sarahcbautistal@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-5x"></i></a>
+                    &emsp;&emsp;
+                    <a href="sms:+13059726245" target="_blank"><i class="fa-solid fa-square-phone fa-5x"></i></a>
+                    &emsp;&emsp;
+                    <a href="https://www.linkedin.com/in/sarah-bautista-9b0271226" target="_blank"><i class="fa-brands fa-linkedin fa-5x"></i></a>
+                    &emsp;&emsp;
+                    <a href="https://github.com/SarahBautista" target="_blank"><i class="fa-brands fa-github-square fa-5x"></i></a>
+                    &emsp;&emsp;
+                    <a href="https://www.instagram.com/ssarahbautista/" target="_blank"><i class="fa-brands fa-instagram fa-5x"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="row" id="footer">
+            <p>Coded with <span style="color: rgb(221, 0, 0)">&heartsuit;</span> by Sarah Bautista. &copy; 2022. All rights reserved.</p>
+        </div>
+    </div>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 </body>
 </html>

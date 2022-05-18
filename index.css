@@ -1,0 +1,176 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #48556a;
+    font-family: Roboto;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    text-align: center;
+}
+.navbar, span, .section-title {
+    font-family: Elsie Swash Caps Black;
+    /* color: rgb(27, 27, 27); */
+}
+#nav-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+.navbar {
+    padding: 20px;
+    background-color: #b4c9c7;
+}
+#intro-title {
+    padding-top: 50px;
+    background-color: #b4c9c7;
+    padding-bottom: 100px;
+}
+/* #wave {
+    background-image: url(../portfolio/images/output-onlinegiftools.gif);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 260px;
+    width: 10000px;
+} */
+.col-4, .col-12 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+#hello, .section-title {
+    color: #48556a;
+    font-weight: bold;
+    font-size: 45px;
+}
+h1 {
+    color: #48556a;
+    font-weight: bold;
+}
+#intro-text {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    color: #b4c9c7;
+    padding-top: 100px;
+}
+.intro {
+    padding-bottom: 80px;
+}
+.rotate {
+    transform: rotate(45deg);
+}
+.section-title {
+    color: #48556a;
+    padding-top: 110px;
+}
+.col-2 {
+    height: 1vh;
+}
+#projects, #experience, #about, #contact, #footer {
+    background-color: #b4c9c7;
+}
+img {
+    width: 70%;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+.col-6 figure {
+	background: #b4c9c7;
+}
+.col-6 figure .selectable {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.col-6 figure .selectable:hover {
+	opacity: .5;
+    cursor: pointer;
+}
+#nav-button, #resume-button {
+    margin-left: 15px;
+    /* height: 90%; */
+    border: none;
+    background-color: #48556a;
+}
+#nav-contact, #resume-link {
+    color: #b4c9c7;
+    font-family: Roboto;
+    font-weight: bold;
+}
+[data-scroll] {
+    transition: transform 3s;
+}
+[data-scroll="in"] {
+    transform: translateY(0);
+}
+[data-scroll="out"] {
+    transform: translateY(20px);
+}
+p {
+    font-size: large;
+    color: #48556a;
+    margin: 0;
+    padding: 0;
+}
+.mini-title {
+    font-size: 30px;
+    /* font-family: Elsie Swash Caps Black; */
+}
+#experience .col-4 {
+    margin-top: 25px;
+    text-align: left;
+    padding-left: 80px;
+    padding-right: 50px;
+}
+#experience .col-4 .mini-title {
+    margin-bottom: 15px;
+}
+#experience .col-4 p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* #experience .col-4 .icon {
+    margin: 15px;
+    float: left;
+} */
+#headshot {
+    width: 60%;
+    text-align: left;
+}
+#about .col-6 p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    text-align: justify;
+}
+#resume-button {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#footer p {
+    padding: 50px;
+    margin-top: 50px;
+}
+#contact .col-12 p {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#contact {
+    background-color: #48556a;
+    padding-bottom: 75px;
+}
+#contact .col-12 {
+    color: #b4c9c7;
+}
+#contact .col-12 i {
+    color: #b4c9c7;
+}
+#about {
+    padding-bottom: 100px;
+}

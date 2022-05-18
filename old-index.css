@@ -1,0 +1,60 @@
+body {
+    background: #EDC8FC;
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar, span, .section-title {
+    font-family: Elsie Swash Caps Black;
+    color: #743678;
+}
+#nav-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+.navbar {
+    padding: 20px;
+    background-color: #D6B1E4;
+}
+#intro-text {
+    background-image: url(../portfolio/images/index-bg.gif);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    display: block;
+    padding: 50px;
+    /* padding-right: 50px; */
+}
+.col-12 {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    font-size: 25px;
+}
+.rel {
+    /* text-align: left; */
+    padding-top: 90px;
+    width: 100%;
+}
+.section-title, #hello {
+    font-weight: bold;
+    font-size: 50px;
+}
+/* .intro-2 {
+    padding-left: 50px;
+} */
+.intro-3 {
+    /* padding-left: 150px; */
+    padding-top: 125px;
+}
+.intro-4 {
+    /* padding-left: 250px; */
+    padding-top: 125px;
+}
+.intro-5 {
+    /* padding-left: 700px; */
+    padding-top: 125px;
+}
